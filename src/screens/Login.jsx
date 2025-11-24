@@ -1,10 +1,13 @@
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import React from 'react';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <View>
       <Text>Login</Text>
+
+      <Button title='Go Back' onPress={()=>navigation.goBack()} />
+
     </View>
   );
 };
